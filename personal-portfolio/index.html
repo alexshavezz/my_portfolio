@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <h1 style="margin: 0;">
+                        <span class="blue">A</span><span class="gray">ndrey.</span>
+                    </h1>
+                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Development Leader</p>
+                <h1>Hi, I'm <br><span class="blue">A</span><span class="gray">ndrey</span> Shadrin</h1>
+                <img id="headingpic" src="images/background.png" alt="Heading Image" class="right-image">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">5
+        <div id="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Experienced leader in managing complex embedded software projects and delivering electronics systems, driving improvements through all
+                        phases of the product development, through innovative approaches in project management, software design and architecture, continuous 
+                       delivery and testing. My international experience and collaborative mindset enable me to build strong, effective partnerships with both 
+                       internal and external stakeholders.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('publications')">Publications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Hard Skills</span><br>Embedded System Design, Project Management, DevOps, Agile, Coding.</li>
+                            <li><span>Soft Skills</span><br>Leadership, Problem Solving, Continuous Improvement, Critical Thinking, Flexibility.</li>
+                            <li><span>Area of Interests</span><br>Embedded Systems, Autonomous Driving, Computer Vision, Applied AI, CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Present</span><br>Project Director</li>
+                            <li><span>2019 - 2023</span><br>Director of Software Development</li>
+                            <li><span>2018 - 2019</span><br>Head of Software Group</li>
+                            <li><span>2015 - 2017</span><br>Senior Project Manager</li>
+                            <li><span>2015 - 2017</span><br>Embedded Platform Architect</li>
+                            <li><span>2012 - 2015</span><br>Microcontroller SW/HW Engineer</li>
+                            <li><span>2006 - 2010</span><br>Research Assistant</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2007 - 2012</span><br>Doctoral Studies, Phd - Universität des Saarlandes</li>
+                            <li><span>2005 - 2006</span><br>Universität des Saarlandes</li>
+                            <li><span>2000 - 2005</span><br>Khabarovsk State Technical University</li>
+                            <li><span>1990 - 2000</span><br>Almaty, School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>Fluent</span><br>German, English</li>
+                            <li><span>Mother Tongue</span><br>Russian</li>
+                            <li><span>Basic Knowledge</span><br>Mandarin, Italian</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul class="hobbies-list">
+                            <li><span class="material-icons hobby-icon">favorite</span> Biohacking</li>
+                            <li><span class="material-icons hobby-icon">travel_explore</span> Travelling around the World</li>
+                            <li><span class="material-icons hobby-icon">book</span> Reading Novels</li>
+                            <li><span class="material-icons hobby-icon">directions_bike</span> Cycling Tours</li>
+                            <li><span class="material-icons hobby-icon">sports_soccer</span> Football</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="publications">
+                        <ul>
+                            <li><span></span><br>Mixed Low- and High Level Programming Languages Semantics.Automated Verification of a Small Hypervisor: Putting It All Together</li>
+                            <li><span></span><br>2012</li>
+                            <li><span></span><br>Saarland University, Saarbrücken</li>
+                            <a href="https://www-wjp.cs.uni-saarland.de/publikationen/Sh12.pdf"><span class="material-icons share-icon">ios_share</span></a>
+                            <li><span></span><br>Integrated Semantics of Intermediate-Language C and Macro-Assembler for Pervasive Formal Verification of Operating Systems and Hypervisors from VerisoftXT</li>
+                            <li><span></span><br>2012</li>
+                            <li><span></span><br>Philadelphia, USA</li>
+                            <a href="https://www-wjp.cs.uni-saarland.de/publikationen/SS12.pdf"><span class="material-icons share-icon">ios_share</span></a>
+                            <li><span></span><br>Design and Implementation of the Portmapper and RPC Primitives in the Context of the SOS.</li>
+                            <li><span></span><br>2006</li>
+                            <li><span></span><br>Saarland University, Saarbrücken</li>
+                            <a href="https://www-wjp.cs.uni-saarland.de/publikationen/Sh06.pdf"><span class="material-icons share-icon">ios_share</span></a>
+                            <li><span></span><br>Completing the Automated Verification of a Small Hypervisor</li>
+                            <li><span></span><br>2012</li>
+                            <li><span></span><br>Thessaloniki, Greece</li>
+                            <a href="https://www-wjp.cs.uni-saarland.de/publikationen/PSS12.pdf"><span class="material-icons share-icon">ios_share</span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-icons" style="font-size: 48px;">architecture</span> 
+                    <h2>Software Architecture</h2>
+                    <p>I design robust and scalable software architectures that align with your business goals. My emphasis is on creating modular systems that facilitate easy integration and maintenance, ensuring a seamless user experience and efficient performance.</p>
+                    <a href="https://sarrahpitaliya.medium.com/understanding-software-architecture-a-complete-guide-cb8f05900603" target="_blank">Learn More about Software Architecture</a>
+                </div>
+                <div>
+                    <span class="material-icons" style="font-size: 48px;">access_time</span> 
+                    <h2>Real-Time Operating Systems</h2>
+                    <p>I implement real-time operating systems that ensure timely and predictable responses in critical applications. My approach emphasizes precision and reliability, allowing systems to manage complex tasks effectively while maintaining optimal performance under demanding conditions.</p>
+                    <a href="https://www.heavy.ai/technical-glossary/embedded-systems" target="_blank">Learn More about Embedded Systems</a>
+                </div>
+                <div>
+                    <span class="material-icons" style="font-size: 48px;">devices</span>
+                    <h2>Embedded Systems</h2>
+                    <p>I develop innovative embedded systems that bridge the gap between hardware and software. My focus is on optimizing performance and reliability, enabling devices to operate efficiently while delivering exceptional functionality tailored to your needs.</p>
+                    <a href="https://www.windriver.com/solutions/learning/rtos" target="_blank">Learn More about Real-Time Operating Systems</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Verisoft-XT</h3>
+                        <p>The creation of methods and tools which would allow the pervasive formal verification of the design of integrated computer systems. An increase in industrial productivity and quality.</p>
+                        <a href="https://www.dfki.de/en/web/research/projects-and-publications/project/verisoft-xt"><span class="material-icons share-icon">ios_share</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Music App">
+                    <div class="layer">
+                        <h3>Verisoft</h3>
+                        <p>The creation of methods and tools which would allow the pervasive formal verification of computer systems from the application layer over the system level down to the gate-level representation of the underlying hardware.</p>
+                        <a href="#"><span class="material-icons share-icon">ios_share</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Shop from the comfort of your home.</p>
+                        <a href="#"><span class="material-icons share-icon">ios_share</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="#" class="see-more-button">See More</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-info">
+        <h2 class="contact-heading">Contact Me</h2>
+        <div class="contact-item">
+            <span class="material-icons">email</span>
+            <a href="mailto:ashadrin@gmail.com">ashadrin@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <span class="material-icons">phone</span>
+            <a href="tel:+0123456789">+49 151 1565 0827</a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/andrey-shadrin-phd-7b945722/?originalSubdomain=cn" target="_blank">Linked in Profile</a>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
